@@ -1,186 +1,104 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ervas Medicinais do Brasil</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ervas Medicinais do Brasil</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>🌿 Ervas Medicinais do Brasil</h1>
-        <p>Conheça os segredos naturais das plantas que curam, acalmam e fortalecem a saúde.</p>
-        <nav>
-            <ul>
-                <li><a href="#oque">O que são</a></li>
-                <li><a href="#principais">Principais Ervas</a></li>
-                <li><a href="#historia">História</a></li>
-                <li><a href="#onde">Onde Encontrar</a></li>
-                <li><a href="#cuidados">Cuidados</a></li>
-                <li><a href="#curiosidades">Curiosidades</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="container">
+      <h1>Ervas Medicinais do Brasil</h1>
+      <p>Conhecimento natural, tradicional e poderoso para o bem-estar.</p>
+    </div>
+  </header>
 
-    <main>
-        <section id="oque">
-            <h2>🌱 O que são Ervas Medicinais?</h2>
-            <p>Ervas medicinais são plantas utilizadas há milhares de anos por suas propriedades terapêuticas. Suas folhas, flores, raízes ou sementes são usadas para tratar, prevenir ou aliviar sintomas de doenças, fortalecer o sistema imunológico e melhorar o bem-estar geral.</p>
-        </section>
+  <nav class="nav">
+    <div class="container">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#ervas">Ervas</a></li>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#cuidados">Cuidados</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
 
-        <section id="principais">
-            <h2>🍃 Principais Ervas Medicinais e Seus Usos</h2>
-            <ul>
-                <li><strong>Camomila:</strong> Calmante natural, ajuda na ansiedade e insônia.</li>
-                <li><strong>Erva-doce:</strong> Auxilia na digestão e cólicas.</li>
-                <li><strong>Hortelã:</strong> Refrescante, alivia problemas digestivos e respiratórios.</li>
-                <li><strong>Capim-cidreira:</strong> Combate o estresse e promove relaxamento.</li>
-                <li><strong>Boldo:</strong> Conhecido pelo efeito benéfico ao fígado.</li>
-                <li><strong>Alecrim:</strong> Estimulante da memória e circulação.</li>
-                <li><strong>Guaco:</strong> Excelente expectorante natural.</li>
-                <li><strong>Urtiga:</strong> Rica em ferro, usada contra anemia.</li>
-                <li><strong>Alfavaca:</strong> Ajuda no controle da glicose e digestão.</li>
-                <li><strong>Babosa (Aloe vera):</strong> Aplicada na pele para queimaduras, feridas e hidratação.</li>
-            </ul>
-        </section>
+  <main class="container">
+    <section id="sobre">
+      <h2>O que são Ervas Medicinais</h2>
+      <p>
+        Ervas medicinais são plantas que possuem propriedades terapêuticas,
+        utilizadas há milhares de anos por diferentes culturas para tratar
+        doenças, fortalecer o corpo e equilibrar a mente.
+      </p>
+    </section>
 
-        <section id="historia">
-            <h2>📜 História e Tradição</h2>
-            <p>No Brasil, o uso de ervas medicinais tem origem indígena, africana e europeia. Os povos indígenas já utilizavam centenas de espécies para tratar doenças, muito antes da chegada dos colonizadores.</p>
-            <p>Com o tempo, saberes tradicionais passaram de geração em geração. Parte desse conhecimento está preservado nas chamadas "rezadeiras", "parteiras" e na medicina popular.</p>
-        </section>
+    <section id="ervas">
+      <h2>Principais Ervas e Seus Usos</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Camomila</h3>
+          <p>Calmante natural, excelente para insônia e ansiedade.</p>
+        </div>
+        <div class="card">
+          <h3>Hortelã</h3>
+          <p>Ajuda na digestão, refresca e alivia dores de cabeça.</p>
+        </div>
+        <div class="card">
+          <h3>Capim-cidreira</h3>
+          <p>Relaxante, usado contra estresse e insônia.</p>
+        </div>
+        <div class="card">
+          <h3>Boldo</h3>
+          <p>Conhecido por seus benefícios ao fígado e sistema digestivo.</p>
+        </div>
+        <div class="card">
+          <h3>Guaco</h3>
+          <p>Expectorante natural, usado para aliviar sintomas respiratórios.</p>
+        </div>
+        <div class="card">
+          <h3>Babosa (Aloe Vera)</h3>
+          <p>Usada para tratar queimaduras, feridas e hidratar a pele.</p>
+        </div>
+      </div>
+    </section>
 
-        <section id="onde">
-            <h2>🛒 Onde Encontrar</h2>
-            <ul>
-                <li>Feiras livres e mercados públicos</li>
-                <li>Ervanários e casas de produtos naturais</li>
-                <li>Farmácias de manipulação</li>
-                <li>Hortas caseiras e comunitárias</li>
-                <li>Plantas espontâneas em quintais e áreas rurais</li>
-            </ul>
-            <p>É importante garantir a origem segura das ervas, evitando folhas contaminadas ou de identificação duvidosa.</p>
-        </section>
+    <section id="historia">
+      <h2>História e Cultura Popular</h2>
+      <p>
+        O uso das ervas no Brasil é uma herança de saberes indígenas, africanos
+        e europeus. Parte desse conhecimento é passado oralmente e preservado
+        em comunidades tradicionais, terreiros, quilombos e famílias do interior.
+      </p>
+    </section>
 
-        <section id="cuidados">
-            <h2>⚠️ Cuidados e Contraindicações</h2>
-            <ul>
-                <li>Nem toda planta natural é segura — algumas podem ser tóxicas ou interagir com medicamentos.</li>
-                <li>Evite automedicação, especialmente em grávidas, lactantes e crianças.</li>
-                <li>Sempre procure orientação de um fitoterapeuta ou profissional de saúde especializado.</li>
-                <li>Use quantidades corretas e por tempo limitado.</li>
-            </ul>
-        </section>
+    <section id="cuidados">
+      <h2>Cuidados e Contraindicações</h2>
+      <ul>
+        <li>Nem toda planta natural é segura para todos os organismos.</li>
+        <li>Evite o uso excessivo ou sem orientação profissional.</li>
+        <li>Gestantes, lactantes e crianças devem ter atenção redobrada.</li>
+        <li>Ervas podem interagir com medicamentos. Consulte um especialista.</li>
+      </ul>
+    </section>
 
-        <section id="curiosidades">
-            <h2>🤯 Curiosidades e Cultura Popular</h2>
-            <ul>
-                <li>O Brasil tem mais de 3.000 espécies de plantas medicinais catalogadas.</li>
-                <li>Em algumas regiões, chás de ervas fazem parte dos rituais religiosos e espirituais.</li>
-                <li>Plantas como a arnica e a aroeira são usadas desde os tempos coloniais.</li>
-                <li>O SUS (Sistema Único de Saúde) reconhece o uso da fitoterapia e possui políticas públicas de incentivo ao uso responsável das ervas medicinais.</li>
-                <li>Existem hortas medicinais em escolas e centros de saúde como forma de educação ambiental e terapêutica.</li>
-            </ul>
-        </section>
-    </main>
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Projeto desenvolvido com fins educativos e culturais.</p>
+      <p>Siga no Instagram: <a href="https://instagram.com/ieecaetanorocha" target="_blank">@ieecaetanorocha</a></p>
+    </section>
+  </main>
 
-    <footer>
-        <p>© 2025 Ervas Medicinais do Brasil • Conhecimento popular e natural</p>
-    </footer>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ervas Medicinais do Brasil • Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ervas Medicinais do Brasil</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>🌿 Ervas Medicinais do Brasil</h1>
-        <p>Conheça os segredos naturais das plantas que curam, acalmam e fortalecem a saúde.</p>
-        <nav>
-            <ul>
-                <li><a href="#oque">O que são</a></li>
-                <li><a href="#principais">Principais Ervas</a></li>
-                <li><a href="#historia">História</a></li>
-                <li><a href="#onde">Onde Encontrar</a></li>
-                <li><a href="#cuidados">Cuidados</a></li>
-                <li><a href="#curiosidades">Curiosidades</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="oque">
-            <h2>🌱 O que são Ervas Medicinais?</h2>
-            <p>Ervas medicinais são plantas utilizadas há milhares de anos por suas propriedades terapêuticas. Suas folhas, flores, raízes ou sementes são usadas para tratar, prevenir ou aliviar sintomas de doenças, fortalecer o sistema imunológico e melhorar o bem-estar geral.</p>
-        </section>
-
-        <section id="principais">
-            <h2>🍃 Principais Ervas Medicinais e Seus Usos</h2>
-            <ul>
-                <li><strong>Camomila:</strong> Calmante natural, ajuda na ansiedade e insônia.</li>
-                <li><strong>Erva-doce:</strong> Auxilia na digestão e cólicas.</li>
-                <li><strong>Hortelã:</strong> Refrescante, alivia problemas digestivos e respiratórios.</li>
-                <li><strong>Capim-cidreira:</strong> Combate o estresse e promove relaxamento.</li>
-                <li><strong>Boldo:</strong> Conhecido pelo efeito benéfico ao fígado.</li>
-                <li><strong>Alecrim:</strong> Estimulante da memória e circulação.</li>
-                <li><strong>Guaco:</strong> Excelente expectorante natural.</li>
-                <li><strong>Urtiga:</strong> Rica em ferro, usada contra anemia.</li>
-                <li><strong>Alfavaca:</strong> Ajuda no controle da glicose e digestão.</li>
-                <li><strong>Babosa (Aloe vera):</strong> Aplicada na pele para queimaduras, feridas e hidratação.</li>
-            </ul>
-        </section>
-
-        <section id="historia">
-            <h2>📜 História e Tradição</h2>
-            <p>No Brasil, o uso de ervas medicinais tem origem indígena, africana e europeia. Os povos indígenas já utilizavam centenas de espécies para tratar doenças, muito antes da chegada dos colonizadores.</p>
-            <p>Com o tempo, saberes tradicionais passaram de geração em geração. Parte desse conhecimento está preservado nas chamadas "rezadeiras", "parteiras" e na medicina popular.</p>
-        </section>
-
-        <section id="onde">
-            <h2>🛒 Onde Encontrar</h2>
-            <ul>
-                <li>Feiras livres e mercados públicos</li>
-                <li>Ervanários e casas de produtos naturais</li>
-                <li>Farmácias de manipulação</li>
-                <li>Hortas caseiras e comunitárias</li>
-                <li>Plantas espontâneas em quintais e áreas rurais</li>
-            </ul>
-            <p>É importante garantir a origem segura das ervas, evitando folhas contaminadas ou de identificação duvidosa.</p>
-        </section>
-
-        <section id="cuidados">
-            <h2>⚠️ Cuidados e Contraindicações</h2>
-            <ul>
-                <li>Nem toda planta natural é segura — algumas podem ser tóxicas ou interagir com medicamentos.</li>
-                <li>Evite automedicação, especialmente em grávidas, lactantes e crianças.</li>
-                <li>Sempre procure orientação de um fitoterapeuta ou profissional de saúde especializado.</li>
-                <li>Use quantidades corretas e por tempo limitado.</li>
-            </ul>
-        </section>
-
-        <section id="curiosidades">
-            <h2>🤯 Curiosidades e Cultura Popular</h2>
-            <ul>
-                <li>O Brasil tem mais de 3.000 espécies de plantas medicinais catalogadas.</li>
-                <li>Em algumas regiões, chás de ervas fazem parte dos rituais religiosos e espirituais.</li>
-                <li>Plantas como a arnica e a aroeira são usadas desde os tempos coloniais.</li>
-                <li>O SUS (Sistema Único de Saúde) reconhece o uso da fitoterapia e possui políticas públicas de incentivo ao uso responsável das ervas medicinais.</li>
-                <li>Existem hortas medicinais em escolas e centros de saúde como forma de educação ambiental e terapêutica.</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 Ervas Medicinais do Brasil • Conhecimento popular e natural</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
