@@ -1,2 +1,2 @@
-// A mensagem aparece no console para quem estiver testando o site
-console.log("🌿 Bem-vindo ao site sobre Ervas Medicinais do Brasil!");
+// Script simples para console
+console.log("Ervas Medicinais do Brasil - Projeto Educacional Ativado");
