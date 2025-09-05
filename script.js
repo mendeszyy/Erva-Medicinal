@@ -1,18 +1,29 @@
-// Script simples para scroll suave nas âncoras do menu
-document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
+// Scroll suave e destaque do menu conforme seção visível
+const navLinks = document.querySelectorAll('.nav-link');
 
-    const targetId = this.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetId);
+navLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    navLinks.forEach(lnk => lnk.classList.remove('active'));
+    link.classList.add('active');
 
-    if (targetElement) {
+    const id = link.getAttribute('href').slice(1);
+    const targetSection = document.getElementById(id);
+
+    if (targetSection) {
       window.scrollTo({
-        top: targetElement.offsetTop - 70,
-        behavior: 'smooth'
+        top: targetSection.offsetTop - 75,
+        behavior: 'smooth',
       });
     }
   });
 });
 
-console.log("Ervas Medicinais do Brasil - Site ativo");
+window.addEventListener('scroll', () => {
+  const scrollPos = window.scrollY + 80;
+  navLinks.forEach(link => {
+    const section = document.querySelector(link.hash);
+    if (section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
+      navLinks.forEach(lnk => lnk.classList.remove('active'));
+      link.classList.add('active');
+    }
