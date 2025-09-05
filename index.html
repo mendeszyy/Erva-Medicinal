@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal das Ervas Medicinais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <h1>Portal das Ervas Medicinais</h1>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#camomila" class="verde">Camomila</a></li>
+        <li><a href="#hortela" class="laranja">Hortelã</a></li>
+        <li><a href="#alecrim" class="azul">Alecrim</a></li>
+        <li><a href="#erva-doce" class="roxo">Erva-doce</a></li>
+        <li><a href="#curiosidades" class="amarelo">Curiosidades</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="secao-titulo">Notícias das Ervas</h2>
+
+    <section class="grid">
+      <!-- Camomila -->
+      <article class="card" id="camomila">
+        <img src="https://images.unsplash.com/photo-1590502593741-8dd43259c59c" alt="Flor de camomila">
+        <div class="conteudo">
+          <h3>Camomila</h3>
+          <p>Conhecida por seu efeito calmante, a camomila é usada em chás para aliviar a ansiedade, melhorar o sono e reduzir cólicas. Sua origem é europeia, mas hoje é cultivada no mundo todo.</p>
+        </div>
+      </article>
+
+      <!-- Hortelã -->
+      <article class="card" id="hortela">
+        <img src="https://images.unsplash.com/photo-1590080875789-d3e6f7b1c81d" alt="Folhas de hortelã">
+        <div class="conteudo">
+          <h3>Hortelã</h3>
+          <p>A hortelã refresca e ajuda na digestão. Além disso, é usada como descongestionante natural. Seu cultivo é simples e pode ser feito até em pequenos vasos dentro de casa.</p>
+        </div>
+      </article>
+
+      <!-- Alecrim -->
+      <article class="card" id="alecrim">
+        <img src="https://images.unsplash.com/photo-1620841717624-ec2a3f8c72b4" alt="Alecrim fresco">
+        <div class="conteudo">
+          <h3>Alecrim</h3>
+          <p>O alecrim melhora a memória, alivia dores de cabeça e fortalece o sistema imunológico. Também é muito usado na culinária como tempero aromático.</p>
+        </div>
+      </article>
+
+      <!-- Erva-doce -->
+      <article class="card" id="erva-doce">
+        <img src="https://images.unsplash.com/photo-1606813908361-8a5fddda8b15" alt="Sementes de erva-doce">
+        <div class="conteudo">
+          <h3>Erva-doce</h3>
+          <p>Tradicionalmente usada em chás, a erva-doce ajuda no combate a gases e indigestão. Seu aroma adocicado também é usado para acalmar bebês e relaxar adultos.</p>
+        </div>
+      </article>
+
+      <!-- Curiosidades -->
+      <article class="card" id="curiosidades">
+        <img src="https://images.unsplash.com/photo-1615485737481-2b87c6c13c87" alt="Chá herbal">
+        <div class="conteudo">
+          <h3>Curiosidades</h3>
+          <p id="texto-curiosidade">Clique no botão abaixo para descobrir curiosidades sobre ervas medicinais.</p>
+          <button onclick="mostrarCuriosidade()">Ver Curiosidade</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 - Portal das Ervas Medicinais</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
