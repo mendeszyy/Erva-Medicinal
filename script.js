@@ -1,14 +1,19 @@
-function mostrarCuriosidade() {
-  const curiosidades = [
-    "A camomila já era usada pelos egípcios como planta sagrada para rituais de cura.",
-    "Na Grécia antiga, o alecrim era associado à memória e aos estudos.",
-    "A hortelã é usada em diversas culturas como repelente natural contra insetos.",
-    "O chá de erva-doce é conhecido popularmente como calmante leve para bebês.",
-    "Muitas ervas medicinais são cultivadas facilmente em pequenos vasos em casa.",
-    "Na Idade Média, ervas eram usadas como 'remédios da natureza' em mosteiros.",
-    "Algumas ervas medicinais também são usadas na culinária, unindo sabor e saúde."
-  ];
+// Mensagem de boas-vindas
+console.log("🌿 Bem-vindo ao Portal das Ervas Medicinais!");
 
-  const sorteio = Math.floor(Math.random() * curiosidades.length);
-  document.getElementById("texto-curiosidade").textContent = curiosidades[sorteio];
-}
+// Efeito ao clicar nas ervas
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+        const nome = card.querySelector("h3").textContent;
+        alert(`Você selecionou a erva: ${nome}`);
+    });
+});
+
+// Rolagem suave ao clicar no menu
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const id = link.getAttribute('href').substring(1);
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    });
+});
