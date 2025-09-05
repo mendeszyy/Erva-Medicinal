@@ -21,6 +21,3 @@ Este projeto foi criado com o objetivo de reunir informações confiáveis, orga
 - CSS3  
 - JavaScript  
 - Design responsivo e simples, inspirado em sites informativos e agrícolas
-
-1. Clone o repositório
-
