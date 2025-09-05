@@ -1,29 +1,14 @@
-// Scroll suave e destaque do menu conforme seção visível
-const navLinks = document.querySelectorAll('.nav-link');
+function mostrarCuriosidade() {
+  const curiosidades = [
+    "A camomila já era usada pelos egípcios como planta sagrada para rituais de cura.",
+    "Na Grécia antiga, o alecrim era associado à memória e aos estudos.",
+    "A hortelã é usada em diversas culturas como repelente natural contra insetos.",
+    "O chá de erva-doce é conhecido popularmente como calmante leve para bebês.",
+    "Muitas ervas medicinais são cultivadas facilmente em pequenos vasos em casa.",
+    "Na Idade Média, ervas eram usadas como 'remédios da natureza' em mosteiros.",
+    "Algumas ervas medicinais também são usadas na culinária, unindo sabor e saúde."
+  ];
 
-navLinks.forEach(link => {
-  link.addEventListener('click', event => {
-    event.preventDefault();
-    navLinks.forEach(lnk => lnk.classList.remove('active'));
-    link.classList.add('active');
-
-    const id = link.getAttribute('href').slice(1);
-    const targetSection = document.getElementById(id);
-
-    if (targetSection) {
-      window.scrollTo({
-        top: targetSection.offsetTop - 75,
-        behavior: 'smooth',
-      });
-    }
-  });
-});
-
-window.addEventListener('scroll', () => {
-  const scrollPos = window.scrollY + 80;
-  navLinks.forEach(link => {
-    const section = document.querySelector(link.hash);
-    if (section.offsetTop <= scrollPos && section.offsetTop + section.offsetHeight > scrollPos) {
-      navLinks.forEach(lnk => lnk.classList.remove('active'));
-      link.classList.add('active');
-    }
+  const sorteio = Math.floor(Math.random() * curiosidades.length);
+  document.getElementById("texto-curiosidade").textContent = curiosidades[sorteio];
+}
