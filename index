@@ -2,21 +2,22 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ervas Medicinais do Brasil</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="container">
       <h1>Ervas Medicinais do Brasil</h1>
-      <p>Conhecimento natural, tradicional e poderoso para o bem-estar.</p>
+      <p>Conheça as principais ervas medicinais, seus usos, histórias e cuidados</p>
     </div>
   </header>
 
   <nav class="nav">
     <div class="container">
-      <ul>
+      <ul class="nav-list">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#ervas">Ervas</a></li>
         <li><a href="#historia">História</a></li>
@@ -26,73 +27,72 @@
     </div>
   </nav>
 
-  <main class="container">
-    <section id="sobre">
-      <h2>O que são Ervas Medicinais</h2>
+  <main class="container main-content">
+    <section id="sobre" class="section">
+      <h2>Sobre as Ervas Medicinais</h2>
       <p>
-        Ervas medicinais são plantas que possuem propriedades terapêuticas,
-        utilizadas há milhares de anos por diferentes culturas para tratar
-        doenças, fortalecer o corpo e equilibrar a mente.
+        As ervas medicinais são plantas utilizadas há milênios para prevenir e tratar doenças, aliviar sintomas e promover o equilíbrio do corpo e da mente. No Brasil, essa tradição é resultado da junção dos conhecimentos indígenas, africanos e europeus.
+      </p>
+      <p>
+        Este site foi criado para apresentar informações confiáveis sobre as principais ervas usadas na cultura popular brasileira, destacando usos, histórias e cuidados essenciais.
       </p>
     </section>
 
-    <section id="ervas">
+    <section id="ervas" class="section">
       <h2>Principais Ervas e Seus Usos</h2>
-      <div class="grid">
-        <div class="card">
+      <div class="grid-cards">
+        <article class="card">
           <h3>Camomila</h3>
-          <p>Calmante natural, excelente para insônia e ansiedade.</p>
-        </div>
-        <div class="card">
+          <p>Calmante natural, usada para insônia, ansiedade e problemas digestivos leves.</p>
+        </article>
+        <article class="card">
           <h3>Hortelã</h3>
-          <p>Ajuda na digestão, refresca e alivia dores de cabeça.</p>
-        </div>
-        <div class="card">
+          <p>Auxilia na digestão, combate dores de cabeça e tem efeito refrescante.</p>
+        </article>
+        <article class="card">
           <h3>Capim-cidreira</h3>
-          <p>Relaxante, usado contra estresse e insônia.</p>
-        </div>
-        <div class="card">
+          <p>Relaxante natural, indicado contra estresse e insônia.</p>
+        </article>
+        <article class="card">
           <h3>Boldo</h3>
-          <p>Conhecido por seus benefícios ao fígado e sistema digestivo.</p>
-        </div>
-        <div class="card">
+          <p>Usado para problemas hepáticos e digestivos, deve ser consumido com moderação.</p>
+        </article>
+        <article class="card">
           <h3>Guaco</h3>
-          <p>Expectorante natural, usado para aliviar sintomas respiratórios.</p>
-        </div>
-        <div class="card">
+          <p>Expectorante natural, eficaz em tratamentos para tosse e problemas respiratórios.</p>
+        </article>
+        <article class="card">
           <h3>Babosa (Aloe Vera)</h3>
-          <p>Usada para tratar queimaduras, feridas e hidratar a pele.</p>
-        </div>
+          <p>Tratamento de queimaduras, feridas e hidratação da pele.</p>
+        </article>
       </div>
     </section>
 
-    <section id="historia">
+    <section id="historia" class="section">
       <h2>História e Cultura Popular</h2>
       <p>
-        O uso das ervas no Brasil é uma herança de saberes indígenas, africanos
-        e europeus. Parte desse conhecimento é passado oralmente e preservado
-        em comunidades tradicionais, terreiros, quilombos e famílias do interior.
+        O uso das ervas medicinais no Brasil tem raízes profundas na cultura indígena, com plantas utilizadas em rituais e tratamentos. Com a chegada dos africanos e europeus, houve uma troca cultural que ampliou os usos e conhecimentos dessas plantas, formando uma rica tradição que permanece viva até hoje em comunidades rurais e quilombolas.
       </p>
     </section>
 
-    <section id="cuidados">
+    <section id="cuidados" class="section">
       <h2>Cuidados e Contraindicações</h2>
       <ul>
-        <li>Nem toda planta natural é segura para todos os organismos.</li>
-        <li>Evite o uso excessivo ou sem orientação profissional.</li>
-        <li>Gestantes, lactantes e crianças devem ter atenção redobrada.</li>
-        <li>Ervas podem interagir com medicamentos. Consulte um especialista.</li>
+        <li>Nem toda planta natural é segura para todos; o uso deve ser consciente.</li>
+        <li>Gestantes, lactantes, crianças e pessoas com doenças crônicas devem consultar profissionais antes do uso.</li>
+        <li>Ervas podem interagir com medicamentos; atenção às dosagens e combinações.</li>
+        <li>Uso excessivo pode causar efeitos adversos sérios.</li>
       </ul>
     </section>
 
-    <section id="contato">
+    <section id="contato" class="section">
       <h2>Contato</h2>
       <p>Projeto desenvolvido com fins educativos e culturais.</p>
-      <p>Siga no Instagram: <a href="https://instagram.com/ieecaetanorocha" target="_blank">@ieecaetanorocha</a></p>
+      <p>Siga no Instagram: <a href="https://instagram.com/ieecaetanorocha" target="_blank" rel="noopener">@ieecaetanorocha</a></p>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
       <p>&copy; 2025 Ervas Medicinais do Brasil • Todos os direitos reservados.</p>
     </div>
