@@ -1,167 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal das Ervas Medicinais</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      margin: 0;
-    }
-    header {
-      background: #2e7d32;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 { margin: 0; }
-    main {
-      max-width: 1100px;
-      margin: 20px auto;
-      padding: 0 15px;
-    }
-    h2 {
-      color: #2e7d32;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: 0.3s;
-    }
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-    .conteudo {
-      padding: 15px;
-    }
-    .conteudo h3 {
-      color: #2e7d32;
-      margin-bottom: 10px;
-    }
-    button {
-      background: #2e7d32;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #388e3c;
-    }
-    footer {
-      margin-top: 30px;
-      padding: 15px;
-      text-align: center;
-      background: #2e7d32;
-      color: white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal das Ervas Medicinais</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Portal das Ervas Medicinais</h1>
-  </header>
+    <header>
+        <h1>Portal das Ervas Medicinais</h1>
+    </header>
 
-  <main>
-    <h2>Notícias das Ervas</h2>
-    <section class="grid">
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1590502593741-8dd43259c59c" alt="Camomila">
-        <div class="conteudo">
-          <h3>Camomila</h3>
-          <p>Conhecida por seu efeito calmante, usada em chás para aliviar ansiedade, melhorar o sono e reduzir cólicas.</p>
-        </div>
-      </article>
+    <main>
+        <h2>Notícias das Ervas</h2>
+        <section class="cards-container">
+            <div class="card">
+                <img src="images/camomila.jpg" alt="Camomila">
+                <h3>Camomila</h3>
+                <p>Conhecida por seu efeito calmante, usada em chás para aliviar ansiedade, melhorar o sono e reduzir cólicas.</p>
+            </div>
+            <div class="card">
+                <img src="images/hortela.jpg" alt="Hortelã">
+                <h3>Hortelã</h3>
+                <p>Refrescante e digestiva, a hortelã também é usada como descongestionante natural e pode ser cultivada em vasos.</p>
+            </div>
+            <div class="card">
+                <img src="images/alecrim.jpg" alt="Alecrim">
+                <h3>Alecrim</h3>
+                <p>Estimula a memória, alivia dores de cabeça e fortalece o sistema imunológico, além de ser tempero aromático.</p>
+            </div>
+            <div class="card">
+                <img src="images/erva-doce.jpg" alt="Erva-doce">
+                <h3>Erva-doce</h3>
+                <p>Ajuda no combate a gases e indigestão. Muito usada em chás com aroma adocicado que acalma e relaxa.</p>
+            </div>
+            <div class="card">
+                <img src="images/boldo.jpg" alt="Boldo">
+                <h3>Boldo</h3>
+                <p>Conhecido por suas propriedades digestivas e desintoxicantes. Suas folhas ajudam em casos de má digestão.</p>
+            </div>
+            <div class="card">
+                <img src="images/capim-santo.jpg" alt="Capim-santo">
+                <h3>Capim-santo</h3>
+                <p>Possui aroma cítrico e é usado em chás para aliviar estresse e auxiliar na digestão. Também na culinária.</p>
+            </div>
+        </section>
+    </main>
 
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1590080875789-d3e6f7b1c81d" alt="Hortelã">
-        <div class="conteudo">
-          <h3>Hortelã</h3>
-          <p>Refrescante e digestiva, a hortelã também é usada como descongestionante natural e pode ser cultivada em vasos.</p>
-        </div>
-      </article>
+    <footer>
+        <p>© 2025 Portal das Ervas Medicinais</p>
+    </footer>
 
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1620841717624-ec2a3f8c72b4" alt="Alecrim">
-        <div class="conteudo">
-          <h3>Alecrim</h3>
-          <p>Estimula a memória, alivia dores de cabeça e fortalece o sistema imunológico, além de ser tempero aromático.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1606813908361-8a5fddda8b15" alt="Erva-doce">
-        <div class="conteudo">
-          <h3>Erva-doce</h3>
-          <p>Ajuda no combate a gases e indigestão. Muito usada em chás com aroma adocicado que acalma e relaxa.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314" alt="Boldo">
-        <div class="conteudo">
-          <h3>Boldo</h3>
-          <p>Conhecido por suas propriedades digestivas e hepáticas. Suas folhas ajudam em problemas estomacais.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1615485737481-2b87c6c13c87" alt="Capim-santo">
-        <div class="conteudo">
-          <h3>Capim-santo</h3>
-          <p>Possui aroma cítrico e é usado em chás para aliviar estresse e auxiliar na digestão. Também na culinária.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1578662996442-48f407b4b8a4" alt="Gengibre">
-        <div class="conteudo">
-          <h3>Gengibre</h3>
-          <p>Anti-inflamatório natural, melhora a imunidade e ajuda contra náuseas. Presente em chás e culinária.</p>
-        </div>
-      </article>
-
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1587049352844-1d22a34d3fbc" alt="Chá de ervas">
-        <div class="conteudo">
-          <h3>Curiosidades</h3>
-          <p id="curiosidade">Clique no botão abaixo para ver curiosidades sobre ervas medicinais.</p>
-          <button onclick="mostrarCuriosidade()">Ver Curiosidade</button>
-        </div>
-      </article>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 - Portal das Ervas Medicinais</p>
-  </footer>
-
-  <script>
-    function mostrarCuriosidade() {
-      const curiosidades = [
-        "Na Idade Média, ervas eram cultivadas em mosteiros como remédios naturais.",
-        "O chá de camomila era usado no Egito antigo como oferenda aos deuses.",
-        "O gengibre já foi moeda de troca em algumas civilizações.",
-        "A hortelã é uma das ervas mais antigas cultivadas pelo homem.",
-        "O boldo é uma das ervas mais populares da medicina caseira brasileira."
-      ];
-      const sorteio = Math.floor(Math.random() * curiosidades.length);
-      document.getElementById("curiosidade").textContent = curiosidades[sorteio];
-    }
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
