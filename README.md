@@ -1,23 +1,19 @@
-# Ervas Medicinais do Brasil
+# Portal das Ervas Medicinais
 
-Um site educativo e informativo sobre as principais ervas medicinais utilizadas no Brasil, com foco em cultura popular, tradição e saúde natural.
+Um site informativo e interativo sobre **ervas medicinais**, desenvolvido em HTML, CSS e JavaScript.  
+O objetivo é apresentar de forma simples e atraente os **benefícios, origens e curiosidades** de diferentes ervas que fazem parte da cultura popular.
 
-## Sobre o Projeto
+---
 
-Este projeto foi criado com o objetivo de reunir informações confiáveis, organizadas e de fácil acesso sobre ervas medicinais usadas na tradição brasileira. O site apresenta os principais usos, cuidados, curiosidades e a história por trás dessas plantas tão presentes no dia a dia das comunidades.
+## 🌱 Funcionalidades
 
-## Tópicos Abordados
+- Página inicial com **design estilo portal de notícias**.  
+- Cards com informações sobre várias ervas (Camomila, Hortelã, Alecrim, Erva-doce).  
+- **Curiosidades interativas** que mudam a cada clique.  
+- Layout responsivo, funcionando bem em **computadores e celulares**.  
+- Estrutura leve, sem frameworks externos — apenas HTML, CSS e JavaScript puros.  
 
-- O que são ervas medicinais  
-- Principais espécies e seus usos  
-- História e tradição popular  
-- Onde encontrar  
-- Cuidados e contraindicações  
-- Curiosidades e cultura popular  
+---
 
-## Tecnologias Utilizadas
+## 🖼️ Estrutura do Projeto
 
-- HTML5  
-- CSS3  
-- JavaScript  
-- Design responsivo e simples, inspirado em sites informativos e agrícolas
